@@ -32,4 +32,6 @@ jobs:
 
         - name: push image
           run: |
-            docker push rithika333/demo:latest 
+            docker push ${{ secrets.DOCKER_USERNAME }}/demo:latest 
+
+            - name: Build and push flask image

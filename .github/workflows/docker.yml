@@ -24,7 +24,7 @@ jobs:
 
         - name: build image
           run: |
-            docker build -t demo .
+            docker build -t ${{ secrets.DOCKER_USERNAME }}/demo:latest .
 
         - name: run image
           run: |
